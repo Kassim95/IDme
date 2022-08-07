@@ -1,0 +1,263 @@
+#m-container {
+    display: none;
+}
+
+body {
+    font-family: "Source Sans Pro", Helvetica !important;
+    font-style: normal !important;
+    color: #272833;
+    margin: 80px;
+}
+.title {
+    width: 181px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    color: #16145A;
+    margin-bottom: 24px;
+}
+
+#d-container {
+    border: 1px solid #e7e7ed;
+    border-radius: 4px;
+    width: 1097px;
+    display: flex;
+    flex-direction: column;
+}
+
+#d-container thead {
+    box-shadow: inset 0px -1px 0px #e7e7ed;
+    -moz-box-shadow: inset 0px -1px 0px #e7e7ed;
+    -webkit-box-shadow: inset 0px -1px 0px #e7e7ed;
+    width: 1097px;
+    height: 48px;
+}
+#d-container thead tr {
+    width: 100%;
+    height: 100%;
+}
+
+th, tr, td {
+    padding: 0;
+}
+
+.th-blank, .th-ellipsis, .td-blank {
+    width: 48px;
+}
+.th-name, .th-date, .th-category, .th-location, .th-description, .th-price {
+    width: 163px;
+    text-align: left;
+}
+.th-category {
+    text-align: center;
+}
+
+.th-location {
+    width: 186px;
+}
+
+.th-name p, .th-location p, .th-date p, .th-category p, .th-description p, .th-price p {
+    margin: 12px;
+}
+
+tbody tr {
+    height: 130px;
+}
+
+tbody td:not(:first-child):not(:last-child) {
+    width: 163px;;
+}
+
+thead th p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.d-name, .d-purchase-date, .d-description {
+    line-height: 150%;
+}
+
+.d-name {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 20px 12px;
+}
+
+.d-location {
+    background-color: transparent;
+    height: 40px;
+    left: -23px;
+    mix-blend-mode: normal;
+    object-fit: cover;
+    top: 0px;
+    width: 40px;
+    margin: 13px 138.4px 11px 12px;
+}
+
+.d-purchase-date {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 21.5px 7px;
+}
+
+.d-category {
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 2px;
+    padding: 3px 12px 3px;
+    margin: 20px 28px;
+    text-align: center;
+} 
+
+.d-description {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 11px 13px;
+}
+
+.d-price {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 20px 19px;
+}
+
+.d-ellipsis {
+    height: 16px;
+    margin: 16px 24px;
+}
+
+.technology {
+    color: #000000;
+    border: 1px solid #CDCED9;
+}
+
+.entertainment {
+    color: #118632;
+    border: 1px solid #98D4A9;
+}
+.automotive {
+    color: #D94130;
+    border: 1px solid #FF8577;
+}
+
+.food {
+    color: #d930d1;
+    border: 1px solid #ff77f8;
+}
+
+.footwear {
+    color: #30d9d9;
+    border: 1px solid #77faff;
+}
+
+.travel {
+    color: #d98230;
+    border: 1px solid #dd901d;
+}
+
+.apparel {
+    color: #c8d930;
+    border: 1px solid #d3e62f;
+}
+
+
+
+/* Mobile and tablet viewport */
+@media (max-width: 1180px) {
+    body {
+        margin: 16px;
+        color: #232326;
+    }
+
+    #d-container {
+        display: none;
+    }
+
+    #m-container {
+        display: block;
+    }
+
+    .title {
+        font-size: 32px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .m-card {
+        width: 343px;
+        height: 161px;
+        border: 1px solid #CDCED9;
+        border-radius: 10px;
+        margin-bottom: 9px;
+    }
+
+    .m-card .first-section {
+        display: flex;
+        height: 50px;
+        margin-bottom: 3px;
+    }
+
+    .m-location {
+        height: 30px;
+        width: 30px;
+        margin: 16px 10px 16px 24px;
+    }
+
+    .m-name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        width: 161px;
+        height: 40px;
+        margin: 11px 10px 11px 0px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        display: block;
+    }
+
+    .m-price {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: -0.24px;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+        width: 73px;
+        height: 40px;
+        margin: 14px 24px 8px 6px;
+    }
+
+    .m-description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #272833;
+        width: 224px;
+        height: 35px;
+        margin: 0px 25px 20px 25px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        display: block;
+    }
+
+    .purchase-date-label p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: #272833;
+        height: 20px;
+        margin: 0px 25px 0px 25px;
+    }
+
+    .m-purchase-date {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0px 25px 14px 25px;
+        letter-spacing: -0.24px;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+    }
+}
